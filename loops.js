@@ -15,9 +15,10 @@ function whileLoop(number){
   var sandwich = ["bread","jam","honey"]
   
   function doWhileLoop(array){
-    return (length--)
+    var length = array.length
     do {return array}
     while(length>0);
+    length--
   }
   
   
