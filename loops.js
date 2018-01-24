@@ -19,14 +19,16 @@ function whileLoop(number){
  return 'done'
     }
   
-  var sandwich = ["bread","jam","honey"]
-  
-  function doWhileLoop(array){
-    var length = array.length
-    do {return array}
-    while(length>0);
-    length--
+  function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
   }
-  
+
+  do {
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
+
+  return array
+}
   
   
